@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18203FBF1F26747300281F08 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18203FBE1F26747300281F08 /* CategoriesTableViewController.swift */; };
+		18203FC11F26C25300281F08 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18203FC01F26C25200281F08 /* CategoriesTableViewCell.swift */; };
+		18203FC31F26CB4500281F08 /* CategoryDetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18203FC21F26CB4500281F08 /* CategoryDetailCollectionViewController.swift */; };
 		182247DD1F038644009660EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182247DC1F038644009660EF /* AppDelegate.swift */; };
 		182247DF1F038644009660EF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182247DE1F038644009660EF /* FirstViewController.swift */; };
 		182247E11F038644009660EF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182247E01F038644009660EF /* SecondViewController.swift */; };
@@ -14,6 +17,37 @@
 		182247E61F038645009660EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182247E51F038645009660EF /* Assets.xcassets */; };
 		182247E91F038645009660EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182247E71F038645009660EF /* LaunchScreen.storyboard */; };
 		182247F41F038646009660EF /* DutchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182247F31F038646009660EF /* DutchTests.swift */; };
+		182248011F038D58009660EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182248001F038D58009660EF /* User.swift */; };
+		182248051F038D74009660EF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182248021F038D74009660EF /* Image.swift */; };
+		182248061F038D74009660EF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182248031F038D74009660EF /* Category.swift */; };
+		182248071F038D74009660EF /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182248041F038D74009660EF /* Ad.swift */; };
+		182248091F038D84009660EF /* StaggeredGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182248081F038D84009660EF /* StaggeredGridLayout.swift */; };
+		1822480D1F03F146009660EF /* AdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822480C1F03F146009660EF /* AdCollectionViewCell.swift */; };
+		182248111F03FD4E009660EF /* AdCollectionViewControllerold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182248101F03FD4E009660EF /* AdCollectionViewControllerold.swift */; };
+		18241FE71F3AEA1E0004A8D3 /* Gravatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18241FE61F3AEA1E0004A8D3 /* Gravatar.swift */; };
+		1824519C1F332F2500299A26 /* SellerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824519B1F332F2400299A26 /* SellerProfileViewController.swift */; };
+		182C537E1F2911B100876FA7 /* AdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C537D1F2911B100876FA7 /* AdDetailViewController.swift */; };
+		182C53801F2A43A300876FA7 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C537F1F2A43A100876FA7 /* ExploreViewController.swift */; };
+		182C53821F2A43E300876FA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C53811F2A43E300876FA7 /* ProfileViewController.swift */; };
+		182C53841F2B280D00876FA7 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C53831F2B280D00876FA7 /* OptionsTableViewCell.swift */; };
+		182C53861F2C775600876FA7 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C53851F2C775500876FA7 /* EditProfileViewController.swift */; };
+		182C53881F2D0A2700876FA7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C53871F2D0A2700876FA7 /* MainTabBarController.swift */; };
+		182EAAD61F095A57009484F4 /* ChameleonStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EAAD51F095A57009484F4 /* ChameleonStyleManager.swift */; };
+		182EAAD81F0969B5009484F4 /* SearchablePushRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EAAD71F0969B5009484F4 /* SearchablePushRow.swift */; };
+		182EAADA1F09751C009484F4 /* ComposableSearchablePushRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EAAD91F09751C009484F4 /* ComposableSearchablePushRow.swift */; };
+		1834485E1F346CBA0074F2CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1834485D1F346CBA0074F2CF /* GoogleService-Info.plist */; };
+		18609A7A1F3A0B8100C2C6A8 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18609A791F3A0B8100C2C6A8 /* SearchResultsViewController.swift */; };
+		186240291F388CFF009FABFC /* ExploreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186240281F388CFE009FABFC /* ExploreCollectionViewCell.swift */; };
+		1862402B1F39264B009FABFC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862402A1F39264A009FABFC /* DetailViewController.swift */; };
+		1867C9691F0711A30073B87F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867C9681F0711A10073B87F /* CardView.swift */; };
+		1867C96B1F0812290073B87F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867C96A1F0812290073B87F /* WelcomeViewController.swift */; };
+		1867C96D1F08125E0073B87F /* PostAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867C96C1F08125E0073B87F /* PostAdViewController.swift */; };
+		18880C071F2F14570017C979 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18880C061F2F14560017C979 /* UserDefaultsManager.swift */; };
+		18880C091F2F5B910017C979 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18880C081F2F5B910017C979 /* LoginViewController.swift */; };
+		18880C0B1F2F5BCF0017C979 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18880C0A1F2F5BCF0017C979 /* SignUpViewController.swift */; };
+		18A442BE1F4FAB160009EE5D /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A442BD1F4FAB150009EE5D /* LaunchScreenViewController.swift */; };
+		18CD95351F39BF5B002A3B8F /* AdCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD95341F39BF5B002A3B8F /* AdCollectionViewController.swift */; };
+		75935231F39CB28BA40C370D /* Pods_Dutch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22D1E85BC119F3ADEE835FB /* Pods_Dutch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18203FBE1F26747300281F08 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		18203FC01F26C25200281F08 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		18203FC21F26CB4500281F08 /* CategoryDetailCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDetailCollectionViewController.swift; sourceTree = "<group>"; };
 		182247D91F038644009660EF /* Dutch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dutch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182247DC1F038644009660EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		182247DE1F038644009660EF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +75,40 @@
 		182247EF1F038645009660EF /* DutchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DutchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182247F31F038646009660EF /* DutchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DutchTests.swift; sourceTree = "<group>"; };
 		182247F51F038646009660EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182248001F038D58009660EF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
+		182248021F038D74009660EF /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Model/Image.swift; sourceTree = "<group>"; };
+		182248031F038D74009660EF /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = Model/Category.swift; sourceTree = "<group>"; };
+		182248041F038D74009660EF /* Ad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ad.swift; path = Model/Ad.swift; sourceTree = "<group>"; };
+		182248081F038D84009660EF /* StaggeredGridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaggeredGridLayout.swift; path = Model/StaggeredGridLayout.swift; sourceTree = "<group>"; };
+		1822480C1F03F146009660EF /* AdCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdCollectionViewCell.swift; sourceTree = "<group>"; };
+		182248101F03FD4E009660EF /* AdCollectionViewControllerold.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdCollectionViewControllerold.swift; sourceTree = "<group>"; };
+		18241FE61F3AEA1E0004A8D3 /* Gravatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gravatar.swift; path = ../Gravatar.swift; sourceTree = "<group>"; };
+		1824519B1F332F2400299A26 /* SellerProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerProfileViewController.swift; sourceTree = "<group>"; };
+		182C537D1F2911B100876FA7 /* AdDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdDetailViewController.swift; sourceTree = "<group>"; };
+		182C537F1F2A43A100876FA7 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		182C53811F2A43E300876FA7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		182C53831F2B280D00876FA7 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		182C53851F2C775500876FA7 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		182C53871F2D0A2700876FA7 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		182EAAD51F095A57009484F4 /* ChameleonStyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChameleonStyleManager.swift; sourceTree = "<group>"; };
+		182EAAD71F0969B5009484F4 /* SearchablePushRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchablePushRow.swift; sourceTree = "<group>"; };
+		182EAAD91F09751C009484F4 /* ComposableSearchablePushRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposableSearchablePushRow.swift; sourceTree = "<group>"; };
+		1834485D1F346CBA0074F2CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18609A791F3A0B8100C2C6A8 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		186240281F388CFE009FABFC /* ExploreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewCell.swift; sourceTree = "<group>"; };
+		1862402A1F39264A009FABFC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		18657DA21F3C527500B28384 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		1867C9681F0711A10073B87F /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		1867C96A1F0812290073B87F /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		1867C96C1F08125E0073B87F /* PostAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAdViewController.swift; sourceTree = "<group>"; };
+		18880C061F2F14560017C979 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		18880C081F2F5B910017C979 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18880C0A1F2F5BCF0017C979 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		18A442BD1F4FAB150009EE5D /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		18CD95341F39BF5B002A3B8F /* AdCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdCollectionViewController.swift; sourceTree = "<group>"; };
+		98FFA418E915EA06465B0A44 /* Pods-Dutch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dutch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dutch/Pods-Dutch.debug.xcconfig"; sourceTree = "<group>"; };
+		E22D1E85BC119F3ADEE835FB /* Pods_Dutch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dutch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9DE6D2358D809EE1F719FB /* Pods-Dutch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dutch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dutch/Pods-Dutch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75935231F39CB28BA40C370D /* Pods_Dutch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +130,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05339425A40D40B324349611 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98FFA418E915EA06465B0A44 /* Pods-Dutch.debug.xcconfig */,
+				FA9DE6D2358D809EE1F719FB /* Pods-Dutch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		182247D01F038644009660EF = {
 			isa = PBXGroup;
 			children = (
 				182247DB1F038644009660EF /* Dutch */,
 				182247F21F038646009660EF /* DutchTests */,
 				182247DA1F038644009660EF /* Products */,
+				05339425A40D40B324349611 /* Pods */,
+				3117E486D02E0CA96FE7CAF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +162,42 @@
 		182247DB1F038644009660EF /* Dutch */ = {
 			isa = PBXGroup;
 			children = (
+				1834485D1F346CBA0074F2CF /* GoogleService-Info.plist */,
+				182247FF1F038D05009660EF /* Helpers */,
+				182247FE1F038CEF009660EF /* Model */,
 				182247DC1F038644009660EF /* AppDelegate.swift */,
 				182247DE1F038644009660EF /* FirstViewController.swift */,
 				182247E01F038644009660EF /* SecondViewController.swift */,
 				182247E21F038644009660EF /* Main.storyboard */,
+				1862402A1F39264A009FABFC /* DetailViewController.swift */,
+				18880C061F2F14560017C979 /* UserDefaultsManager.swift */,
+				182C53871F2D0A2700876FA7 /* MainTabBarController.swift */,
+				182C53831F2B280D00876FA7 /* OptionsTableViewCell.swift */,
+				182C537F1F2A43A100876FA7 /* ExploreViewController.swift */,
+				18609A791F3A0B8100C2C6A8 /* SearchResultsViewController.swift */,
+				182C53811F2A43E300876FA7 /* ProfileViewController.swift */,
+				1824519B1F332F2400299A26 /* SellerProfileViewController.swift */,
+				182C537D1F2911B100876FA7 /* AdDetailViewController.swift */,
+				1822480C1F03F146009660EF /* AdCollectionViewCell.swift */,
+				186240281F388CFE009FABFC /* ExploreCollectionViewCell.swift */,
 				182247E51F038645009660EF /* Assets.xcassets */,
 				182247E71F038645009660EF /* LaunchScreen.storyboard */,
+				18A442BD1F4FAB150009EE5D /* LaunchScreenViewController.swift */,
 				182247EA1F038645009660EF /* Info.plist */,
+				182248101F03FD4E009660EF /* AdCollectionViewControllerold.swift */,
+				18CD95341F39BF5B002A3B8F /* AdCollectionViewController.swift */,
+				18203FC21F26CB4500281F08 /* CategoryDetailCollectionViewController.swift */,
+				1867C96A1F0812290073B87F /* WelcomeViewController.swift */,
+				18880C081F2F5B910017C979 /* LoginViewController.swift */,
+				18880C0A1F2F5BCF0017C979 /* SignUpViewController.swift */,
+				1867C96C1F08125E0073B87F /* PostAdViewController.swift */,
+				182C53851F2C775500876FA7 /* EditProfileViewController.swift */,
+				182EAAD71F0969B5009484F4 /* SearchablePushRow.swift */,
+				182EAAD91F09751C009484F4 /* ComposableSearchablePushRow.swift */,
+				182EAAD51F095A57009484F4 /* ChameleonStyleManager.swift */,
+				18203FBE1F26747300281F08 /* CategoriesTableViewController.swift */,
+				18203FC01F26C25200281F08 /* CategoriesTableViewCell.swift */,
+				18657DA21F3C527500B28384 /* BridgingHeader.h */,
 			);
 			path = Dutch;
 			sourceTree = "<group>";
@@ -99,6 +211,35 @@
 			path = DutchTests;
 			sourceTree = "<group>";
 		};
+		182247FE1F038CEF009660EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				182248001F038D58009660EF /* User.swift */,
+				182248021F038D74009660EF /* Image.swift */,
+				182248031F038D74009660EF /* Category.swift */,
+				182248041F038D74009660EF /* Ad.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		182247FF1F038D05009660EF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18241FE61F3AEA1E0004A8D3 /* Gravatar.swift */,
+				182248081F038D84009660EF /* StaggeredGridLayout.swift */,
+				1867C9681F0711A10073B87F /* CardView.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		3117E486D02E0CA96FE7CAF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E22D1E85BC119F3ADEE835FB /* Pods_Dutch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 182247F81F038646009660EF /* Build configuration list for PBXNativeTarget "Dutch" */;
 			buildPhases = (
+				8AB30A0B39AA11867F9DDC22 /* [CP] Check Pods Manifest.lock */,
 				182247D51F038644009660EF /* Sources */,
 				182247D61F038644009660EF /* Frameworks */,
 				182247D71F038644009660EF /* Resources */,
+				07406B99007AAC9A54118D06 /* [CP] Embed Pods Frameworks */,
+				C5F0C6C0988B957E3750B1D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,7 +293,8 @@
 				TargetAttributes = {
 					182247D81F038644009660EF = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2EYKMSN9F8;
+						ProvisioningStyle = Manual;
 					};
 					182247EE1F038645009660EF = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -183,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				182247E91F038645009660EF /* LaunchScreen.storyboard in Resources */,
+				1834485E1F346CBA0074F2CF /* GoogleService-Info.plist in Resources */,
 				182247E61F038645009660EF /* Assets.xcassets in Resources */,
 				182247E41F038644009660EF /* Main.storyboard in Resources */,
 			);
@@ -197,14 +343,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07406B99007AAC9A54118D06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dutch/Pods-Dutch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AB30A0B39AA11867F9DDC22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F0C6C0988B957E3750B1D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dutch/Pods-Dutch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		182247D51F038644009660EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18880C091F2F5B910017C979 /* LoginViewController.swift in Sources */,
+				182EAAD81F0969B5009484F4 /* SearchablePushRow.swift in Sources */,
 				182247E11F038644009660EF /* SecondViewController.swift in Sources */,
+				182C53881F2D0A2700876FA7 /* MainTabBarController.swift in Sources */,
+				182248051F038D74009660EF /* Image.swift in Sources */,
+				182248071F038D74009660EF /* Ad.swift in Sources */,
+				182248011F038D58009660EF /* User.swift in Sources */,
+				182C53801F2A43A300876FA7 /* ExploreViewController.swift in Sources */,
+				182C53821F2A43E300876FA7 /* ProfileViewController.swift in Sources */,
+				182248061F038D74009660EF /* Category.swift in Sources */,
+				186240291F388CFF009FABFC /* ExploreCollectionViewCell.swift in Sources */,
+				182C53861F2C775600876FA7 /* EditProfileViewController.swift in Sources */,
+				18609A7A1F3A0B8100C2C6A8 /* SearchResultsViewController.swift in Sources */,
+				18A442BE1F4FAB160009EE5D /* LaunchScreenViewController.swift in Sources */,
+				1824519C1F332F2500299A26 /* SellerProfileViewController.swift in Sources */,
+				1867C96B1F0812290073B87F /* WelcomeViewController.swift in Sources */,
+				18241FE71F3AEA1E0004A8D3 /* Gravatar.swift in Sources */,
+				1867C96D1F08125E0073B87F /* PostAdViewController.swift in Sources */,
 				182247DD1F038644009660EF /* AppDelegate.swift in Sources */,
+				182EAADA1F09751C009484F4 /* ComposableSearchablePushRow.swift in Sources */,
+				182C537E1F2911B100876FA7 /* AdDetailViewController.swift in Sources */,
+				1822480D1F03F146009660EF /* AdCollectionViewCell.swift in Sources */,
+				1862402B1F39264B009FABFC /* DetailViewController.swift in Sources */,
+				18880C071F2F14570017C979 /* UserDefaultsManager.swift in Sources */,
+				182C53841F2B280D00876FA7 /* OptionsTableViewCell.swift in Sources */,
+				18CD95351F39BF5B002A3B8F /* AdCollectionViewController.swift in Sources */,
+				18203FC11F26C25300281F08 /* CategoriesTableViewCell.swift in Sources */,
+				182248111F03FD4E009660EF /* AdCollectionViewControllerold.swift in Sources */,
+				182248091F038D84009660EF /* StaggeredGridLayout.swift in Sources */,
+				18880C0B1F2F5BCF0017C979 /* SignUpViewController.swift in Sources */,
+				1867C9691F0711A30073B87F /* CardView.swift in Sources */,
+				182EAAD61F095A57009484F4 /* ChameleonStyleManager.swift in Sources */,
 				182247DF1F038644009660EF /* FirstViewController.swift in Sources */,
+				18203FBF1F26747300281F08 /* CategoriesTableViewController.swift in Sources */,
+				18203FC31F26CB4500281F08 /* CategoryDetailCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,25 +567,42 @@
 		};
 		182247F91F038646009660EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98FFA418E915EA06465B0A44 /* Pods-Dutch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 2EYKMSN9F8;
 				INFOPLIST_FILE = Dutch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.doxa360.ios.Dutch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doxa360.apps.ios.Dutch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "22f81c52-2045-4ae7-88c8-79cebfd8cb82";
+				PROVISIONING_PROFILE_SPECIFIER = Doxa360;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(PROJECT_DIR)/$(PROJECT_NAME)/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		182247FA1F038646009660EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA9DE6D2358D809EE1F719FB /* Pods-Dutch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 2EYKMSN9F8;
 				INFOPLIST_FILE = Dutch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.doxa360.ios.Dutch;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doxa360.apps.ios.Dutch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "22f81c52-2045-4ae7-88c8-79cebfd8cb82";
+				PROVISIONING_PROFILE_SPECIFIER = Doxa360;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(PROJECT_DIR)/$(PROJECT_NAME)/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -410,6 +653,7 @@
 				182247FA1F038646009660EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		182247FB1F038646009660EF /* Build configuration list for PBXNativeTarget "DutchTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +662,7 @@
 				182247FD1F038646009660EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
