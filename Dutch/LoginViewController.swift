@@ -31,6 +31,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideKeyboard()
+        
         emailField.delegate = self
         passwordField.delegate = self
         
@@ -43,8 +45,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailField {
+            passwordField.becomeFirstResponder()
+        }
         if textField == passwordField {
-            resignFirstResponder()
+            textField.resignFirstResponder()
         }
         return true
     }
@@ -107,4 +112,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+}
+
+extension UIViewController
+{
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
 }

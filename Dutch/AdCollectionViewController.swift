@@ -17,7 +17,7 @@ import SCLAlertView
 
 fileprivate let base = "http://dutch.ng/doxa360/api/v1/"
 fileprivate let photoBase = "http://dutch.ng/uploads/"
-fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
+fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 20.0, right: 10.0)
 fileprivate let itemsPerRow: CGFloat = 2
 fileprivate var ads = [Ad]()
 fileprivate var adImages = [UIImage]()
@@ -126,7 +126,7 @@ class AdCollectionViewController: UICollectionViewController, UICollectionViewDe
         cell.adImage.kf.setImage(with: photoUrl, placeholder: #imageLiteral(resourceName: "placeholder"), options: [.transition(ImageTransition.fade(1))])
         cell.adTitle.text = ad.title.capitalized
         if ad.price == 0.0 {
-            cell.adPrice.text = "Negotiable"
+            cell.adPrice.text = "Contact For Price"
         }
         else {
             cell.adPrice.text = "N\(String(format: "%.2f", arguments: [ad.price]))"
@@ -148,7 +148,21 @@ class AdCollectionViewController: UICollectionViewController, UICollectionViewDe
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
         let availableWidth = view.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
+        
+        
+        let titleFont = UIFont.init(name: "Avenir Book", size: 15.0)
+        let priceFont = UIFont.init(name: "Avenir Next Condensed", size: 13.0)
+        let categoryFont = UIFont.init(name: "Avenir Next Condensed", size: 15.0)
+        
+//        lyke.lyke.height(withConstrainedWidth: widthPerItem-16, font: lykeFont!) + 8.0
+        
+        let ad = ads[indexPath.item]
+        let price = "Contact For Price"
+        let totalHeight = ad.title.height(withConstrainedWidth: widthPerItem-16, font: titleFont!) + price.height(withConstrainedWidth: widthPerItem-16, font: priceFont!) + (ad.category?.title.height(withConstrainedWidth: widthPerItem-16, font: categoryFont!))! + 24 //spacing
+        
         return CGSize(width: widthPerItem, height: widthPerItem+100)
+        
+//        return CGSize(width: widthPerItem, height: widthPerItem+totalHeight)
     }
     
     
@@ -225,4 +239,23 @@ extension String {
     mutating func capitalizeFirstLetter() {
         self = self.capitalizingFirstLetter()
     }
+    
+    func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        
+        return ceil(boundingBox.height)
+    }
+    
+    func width(withConstraintedHeight height: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        
+        return ceil(boundingBox.width)
+    }
 }
+
+
+
+
+

@@ -16,7 +16,7 @@ import SCLAlertView
 
 fileprivate let base = "http://dutch.ng/doxa360/api/v1/"
 fileprivate let photoBase = "http://dutch.ng/uploads/"
-fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
+fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 20.0, right: 10.0)
 fileprivate let itemsPerRow: CGFloat = 2
 
 class ExploreViewController: UIViewController, UITextFieldDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
@@ -32,6 +32,8 @@ class ExploreViewController: UIViewController, UITextFieldDelegate, UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hideKeyboard()
         
         let frame = CGRect(x: (self.view.frame.width/2) - 20.0, y: (self.view.frame.height/2) - 20.0, width: 40.0, height: 40.0)
         
@@ -212,4 +214,22 @@ class ExploreViewController: UIViewController, UITextFieldDelegate, UICollection
     
     
 
+}
+
+
+extension UIViewController
+{
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
 }

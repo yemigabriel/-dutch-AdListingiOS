@@ -33,8 +33,20 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         dismiss(animated: true, completion: nil)
     }
     
+    let button = UIButton(type: UIButtonType.custom)
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hideKeyboard()
+        
+//        button.setTitle("Next", for: UIControlState())
+//        button.setTitleColor(UIColor.black, for: UIControlState())
+//        button.frame = CGRect(x: 0, y: 163, width: 106, height: 53)
+//        button.adjustsImageWhenHighlighted = false
+//        button.addTarget(self, action: #selector(SignUpViewController.Done(_:)), for: UIControlEvents.touchUpInside)
+//        
         
         
         emailField.delegate = self
@@ -61,12 +73,54 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     */
     
+//    func textFieldDidBeginEditing(_ textField: UITextField) {
+//        if textField == phoneField {
+//        NotificationCenter.default.addObserver(self, selector: #selector(SignUpViewController.keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+//        }
+//    }
     
+//    func keyboardWillShow(_ note : Notification) -> Void{
+//        DispatchQueue.main.async { () -> Void in
+//            self.button.isHidden = false
+//            self.button.isEnabled = true
+//            let keyBoardWindow = UIApplication.shared.windows.last
+//            self.button.frame = CGRect(x: 0, y: (keyBoardWindow?.frame.size.height)!-53, width: 106, height: 53)
+//            keyBoardWindow?.addSubview(self.button)
+//            keyBoardWindow?.bringSubview(toFront: self.button)
+//            
+//            UIView.animate(withDuration: (((note.userInfo! as NSDictionary).object(forKey: UIKeyboardAnimationCurveUserInfoKey) as AnyObject).doubleValue)!, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
+//                self.view.frame = self.view.frame.offsetBy(dx: 0, dy: 0)
+//            }, completion: { (complete) -> Void in
+//                print("Complete")
+//            })
+//        }
+//        
+//    }
+//    
+//    func Done(_ sender : UIButton){
+//        
+//        DispatchQueue.main.async { () -> Void in
+//            self.phoneField.resignFirstResponder()
+//            self.button.isEnabled = false
+//            self.button.isHidden = true
+//            self.passwordField.becomeFirstResponder()
+//        }
+//    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == passwordField {
-            resignFirstResponder()
+        if textField == nameField {
+            emailField.becomeFirstResponder()
         }
+        if textField == emailField {
+            phoneField.becomeFirstResponder()
+        }
+        if textField == phoneField {
+            passwordField.becomeFirstResponder()
+        }
+        if textField == passwordField {
+            textField.resignFirstResponder()
+        }
+        
         return true
     }
 
@@ -132,4 +186,22 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
 
+}
+
+
+extension UIViewController
+{
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
 }

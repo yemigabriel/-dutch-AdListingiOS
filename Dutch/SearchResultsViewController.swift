@@ -10,11 +10,12 @@ import UIKit
 import Alamofire
 import Kingfisher
 import SwiftyJSON
+import NVActivityIndicatorView
 
 
 fileprivate let base = "http://dutch.ng/doxa360/api/v1/"
 fileprivate let photoBase = "http://dutch.ng/uploads/"
-fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
+fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 20.0, right: 10.0)
 fileprivate let itemsPerRow: CGFloat = 2
 
 class SearchResultsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
@@ -24,9 +25,20 @@ class SearchResultsViewController: UICollectionViewController, UICollectionViewD
     let reuseIdentifier = "exploreCell"
     var query = String()
     
+    var activityIndicatorView = NVActivityIndicatorView(frame: CGRect())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let frame = CGRect(x: (self.view.frame.width/2) - 20.0, y: (self.view.frame.height/2) - 20.0, width: 40.0, height: 40.0)
+        
+        let activityIndicatorType = NVActivityIndicatorType(rawValue: 5)
+        activityIndicatorView = NVActivityIndicatorView(frame: frame, type: activityIndicatorType, color: UIColor.flatRed, padding: 0.0)
+        self.view.addSubview(activityIndicatorView)
+        if searchResults.isEmpty {
+            activityIndicatorView.startAnimating()
+        }
+        
         
         self.navigationItem.title = self.query
         getSearchResults()
@@ -154,6 +166,8 @@ class SearchResultsViewController: UICollectionViewController, UICollectionViewD
                     self.searchResults.append(ad)
                 }
                 self.collectionView?.reloadData()
+                
+                self.activityIndicatorView.stopAnimating()
                 
             case .failure(let error):
                 print(error)

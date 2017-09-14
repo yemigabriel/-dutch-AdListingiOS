@@ -16,7 +16,7 @@ import NVActivityIndicatorView
 
 fileprivate let base = "http://dutch.ng/doxa360/api/v1/"
 fileprivate let photoBase = "http://dutch.ng/uploads/"
-fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
+fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 20.0, right: 10.0)
 fileprivate let itemsPerRow: CGFloat = 2
 //fileprivate var ads = [Ad]()
 fileprivate var adImages = [UIImage]()
@@ -191,6 +191,8 @@ class CategoryDetailCollectionViewController: UICollectionViewController, UIColl
         
         self.ads = self.category.ad!
         self.collectionView?.reloadData()
+        
+        self.activityIndicatorView.stopAnimating()
     }
     
     private func getImagesByUrl(ads: [Ad]) {
@@ -214,7 +216,7 @@ class CategoryDetailCollectionViewController: UICollectionViewController, UIColl
                     self.ads = self.category.ad!
                     self.collectionView?.collectionViewLayout.invalidateLayout()
                     self.collectionView?.reloadData()
-                    self.activityIndicatorView.stopAnimating()
+                    //self.activityIndicatorView.stopAnimating()
                     print("ads: \(ads.count) and adimages: \(adImages.count)")
                     
                 }

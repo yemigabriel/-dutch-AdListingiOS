@@ -112,7 +112,8 @@ class MainTabBarController: UITabBarController {
 //        self.navigationController?.pushViewController(postAdController, animated: true)
 //        self.present(postAdController, animated: true, completion: nil)
 //        self.tabBarController?.selectedIndex = 2
-        if (UserDefaultsManager.userModel["id"] as! Int == 0) {
+        
+        if (UserDefaultsManager.userModel.isEmpty || UserDefaultsManager.userModel["id"] as! Int == 0) {
             //return to welcome page
             
 //            SCLAlertView().showInfo(" ", subTitle: "You need an account to post an ad. Create or log in to your account now")
