@@ -120,9 +120,20 @@ class AdCollectionViewController: UICollectionViewController, UICollectionViewDe
         
         let adImage = ad.image
         let photoUrl = URL(string: "http://dutch.ng/uploads/\(adImage)")!
+
+        cell.contentView.clipsToBounds = true
+        
+        // Resizing
+        let cellWidth = cell.contentView.frame.width
+//        let processor = ResizingImageProcessor(targetSize: CGSize(width: cellWidth, height: cellHeight))
+//        cell.adImage.frame = CGRect(x: cell.contentView.frame.origin.x, y: cell.contentView.frame.origin.y, width: cellWidth, height: cellWidth)
+
+//        cell.imageHeightConstraint.constant = cellWidth
+        
+        cell.adImage.contentMode = .scaleAspectFill
+        cell.adImage.backgroundColor = UIColor.flatMint
         
         cell.adImage.kf.indicatorType = .activity
-        //        cell.adImage.image = adImages[indexPath.item]
         cell.adImage.kf.setImage(with: photoUrl, placeholder: #imageLiteral(resourceName: "placeholder"), options: [.transition(ImageTransition.fade(1))])
         cell.adTitle.text = ad.title.capitalized
         if ad.price == 0.0 {
@@ -150,17 +161,20 @@ class AdCollectionViewController: UICollectionViewController, UICollectionViewDe
         let widthPerItem = availableWidth / itemsPerRow
         
         
-        let titleFont = UIFont.init(name: "Avenir Book", size: 15.0)
-        let priceFont = UIFont.init(name: "Avenir Next Condensed", size: 13.0)
-        let categoryFont = UIFont.init(name: "Avenir Next Condensed", size: 15.0)
+//        let titleFont = UIFont.init(name: "Avenir Book", size: 15.0)
+//        let priceFont = UIFont.init(name: "Avenir Next Condensed", size: 13.0)
+//        let categoryFont = UIFont.init(name: "Avenir Next Condensed", size: 15.0)
         
 //        lyke.lyke.height(withConstrainedWidth: widthPerItem-16, font: lykeFont!) + 8.0
         
-        let ad = ads[indexPath.item]
-        let price = "Contact For Price"
-        let totalHeight = ad.title.height(withConstrainedWidth: widthPerItem-16, font: titleFont!) + price.height(withConstrainedWidth: widthPerItem-16, font: priceFont!) + (ad.category?.title.height(withConstrainedWidth: widthPerItem-16, font: categoryFont!))! + 24 //spacing
+//        let ad = ads[indexPath.item]
+//        let price = "Contact For Price"
+//        let totalHeight = ad.title.height(withConstrainedWidth: widthPerItem-16, font: titleFont!) + price.height(withConstrainedWidth: widthPerItem-16, font: priceFont!) + (ad.category?.title.height(withConstrainedWidth: widthPerItem-16, font: categoryFont!))! + 24 //spacing
         
-        return CGSize(width: widthPerItem, height: widthPerItem+100)
+        
+//        print ( "totalHeight of annotation is : \(totalHeight)" )
+//        return CGSize(width: widthPerItem, height: widthPerItem+100)
+        return CGSize(width: widthPerItem, height: 300)
         
 //        return CGSize(width: widthPerItem, height: widthPerItem+totalHeight)
     }

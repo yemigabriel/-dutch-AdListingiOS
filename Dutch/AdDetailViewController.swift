@@ -111,8 +111,9 @@ class AdDetailViewController: UIViewController {
 //        localSource.append(KingfisherSource(urlString: "\(photoBase)\(self.ad.image)")!)
         if !((self.ad.images?.isEmpty)!) {
             for image in self.ad.images! {
-                let kfSource = KingfisherSource(urlString: "\(photoBase)\(image.image)")!
-                localSource.append(kfSource)
+                if let kfSource = KingfisherSource(urlString: "\(photoBase)\(image.image)") {
+                    localSource.append(kfSource)
+                }
             }
             print("not empty images ... \(self.ad.images)")
         }

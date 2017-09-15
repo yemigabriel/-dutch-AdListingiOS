@@ -111,7 +111,7 @@ class CategoryDetailCollectionViewController: UICollectionViewController, UIColl
         cell.adImage.kf.setImage(with: photoUrl, placeholder: #imageLiteral(resourceName: "placeholder"), options: [.transition(ImageTransition.fade(1))])
         cell.adTitle.text = ad.title.capitalized
         if ad.price == 0.0 {
-            cell.adPrice.text = "Negotiable"
+            cell.adPrice.text = "Contact For Price"
         }
         else {
             cell.adPrice.text = "N\(String(format: "%.2f", arguments: [ad.price]))"
@@ -137,7 +137,9 @@ class CategoryDetailCollectionViewController: UICollectionViewController, UIColl
         let widthPerItem = availableWidth / itemsPerRow
         print ("width is \(widthPerItem)")
         
-        return CGSize(width: widthPerItem, height: widthPerItem+100)
+//        return CGSize(width: widthPerItem, height: widthPerItem+100)
+        
+        return CGSize(width: widthPerItem, height: 300)
         
     }
     

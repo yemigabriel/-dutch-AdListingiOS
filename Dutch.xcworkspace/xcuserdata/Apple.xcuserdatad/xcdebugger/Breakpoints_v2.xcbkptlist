@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dutch/AdCollectionViewController.swift"
-            timestampString = "527073286.797296"
+            timestampString = "527187076.953236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "453"
-            endingLineNumber = "453">
+            startingLineNumber = "467"
+            endingLineNumber = "467">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -54,11 +54,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dutch/AdCollectionViewController.swift"
-            timestampString = "527073286.797296"
+            timestampString = "527187076.953236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "424"
-            endingLineNumber = "424">
+            startingLineNumber = "438"
+            endingLineNumber = "438">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dutch/AdCollectionViewController.swift"
-            timestampString = "527073286.797296"
+            timestampString = "527187076.953236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "425"
-            endingLineNumber = "425">
+            startingLineNumber = "439"
+            endingLineNumber = "439">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -114,11 +114,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dutch/AdCollectionViewController.swift"
-            timestampString = "527073286.797296"
+            timestampString = "527187076.953236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "461"
-            endingLineNumber = "461">
+            startingLineNumber = "475"
+            endingLineNumber = "475">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -410,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dutch/AdCollectionViewController.swift"
-            timestampString = "527071615.463579"
+            timestampString = "527176791.296217"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "collectionView(_:layout:sizeForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
